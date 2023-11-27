@@ -1,0 +1,13 @@
+---
+const { white, path } = Astro.props;
+---
+
+<a href={path}>
+  <div
+    class={`rounded-md inline-block py-4 px-8 shadow font-medium text-2xl ${
+      white ? 'bg-light' : 'bg-glass/30 backdrop-blur-md hover:bg-glass/60'
+    }`}
+  >
+    <slot />
+  </div>
+</a>

@@ -1,0 +1,12 @@
+---
+import LargeCategoryLink from '@/components/LargeCategoryLink.astro';
+import { largeCategories } from '@/constants/largeCategories';
+---
+
+<section class="z-10 h-screen w-screen absolute">
+  {
+    largeCategories.map(({ title, src, alt }) => (
+      <LargeCategoryLink title={title} src={src} alt={alt} />
+    ))
+  }
+</section>
