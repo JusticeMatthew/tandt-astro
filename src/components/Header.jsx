@@ -13,13 +13,13 @@ export default function Header() {
   });
 
   return (
-    <header className="fixed w-full top-0 z-50 flex items-center h-16">
+    <header className="fixed w-full top-0 z-50 flex items-center justify-center h-16">
       <div id="container" className="flex items-center justify-between">
         <a href="/">
           <p
             className={`${
               scrollPosition === 0 ? 'opacity-100' : 'opacity-0'
-            } text-5xl -tracking-[.25rem] font-barlow -translate-x-[2px] transition-all duration-250`}
+            } text-5xl -tracking-[.25rem] font-barlow transition-all duration-250`}
           >
             TT
           </p>
