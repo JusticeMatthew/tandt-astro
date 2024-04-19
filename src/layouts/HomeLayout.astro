@@ -24,7 +24,7 @@ import Header from '@/components/Header.jsx';
 
   <body>
     <Lenis client:load root options={{ smoothWheel: true, smoothTouch: false }}>
-      <Header client:only />
+      <Header client:only="react" />
       <div class="relative">
         <slot />
       </div>
