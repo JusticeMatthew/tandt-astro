@@ -2,6 +2,8 @@
 import { Lenis } from '@studio-freight/react-lenis';
 import Header from '@/components/Header.jsx';
 import { ViewTransitions } from 'astro:transitions';
+
+const { title } = Astro.props;
 ---
 
 <html lang="en" class="motion-reduce:scroll-auto">
@@ -20,7 +22,7 @@ import { ViewTransitions } from 'astro:transitions';
       content="Don't forget to fill me in"
     />
     <meta property="og:image" content="/images/og-logo.png" /> -->
-    <title>T & T Photography</title>
+    <title>{title}</title>
     <ViewTransitions />
   </head>
 

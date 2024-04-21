@@ -1,5 +1,23 @@
 ---
-import HomeLayout from '@/layouts/HomeLayout.astro';
+import '@/styles/global.css';
+import MainLayout from '@/layouts/MainLayout.astro';
+import ContactForm from '@/components/ContactForm.jsx';
+import Button from '@/components/Button.astro';
 ---
 
-<HomeLayout><p>test</p></HomeLayout>
+<MainLayout title="T & T Photography | Contact">
+  <section id="container" class="relative z-20 h-[90vh] flex items-center">
+    <ContactForm><Button white={true}>Send</Button></ContactForm>
+  </section>
+  <div
+    id="bg-glass"
+    class="absolute top-0 left-0 z-10 w-1/2 h-screen shadow bg-glass/30 backdrop-blur-lg">
+  </div>
+  <div id="bg-image" class="absolute top-0 left-0 z-0 w-screen h-screen">
+    <img
+      src="images/contact-page-bg.webp"
+      alt=""
+      class="object-cover w-full h-full"
+    />
+  </div>
+</MainLayout>
